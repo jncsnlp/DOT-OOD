@@ -7,7 +7,7 @@ Heng-yang Lu, Xin Guo, Shuai Feng, Wenyu Jiang, Yuntao Du, Chang Xia, Chenyou Fa
 
 Abstract: *Detecting Out-Of-Distribution (OOD) samples in image classification is crucial for model reliability. With the rise of Vision-Language Models (VLMs), CLIP-OOD has become a research hotspot. However, we observe the Low Focus Attention phenomenon from the image encoders of CLIP, which means the attention of image encoders often spreads to non-in-distribution regions. This phenomenon comes from the semantic misalignment and inter-class feature confusion. To address these issues, we propose a novel fine-tuned OOD detection method with the Double loss constraint based on Optimal Transport (DOT-OOD). DOT-OOD integrates the Double Loss Constraint (DLC) module and Optimal Transport (OT) module. The DLC module comprises the Aligned Image-Text Concept Matching Loss and the Negative Sample Repulsion Loss, which respectively (1) focus on the core semantics of ID images and achieve cross-modal semantic alignment, (2) expand inter-class distances and enhance discriminative. While the OT module is introduced to obtain enhanced image feature representations. Extensive experimental results show that in the 16-shot scenario of the ImageNet-1k benchmark, DOT-OOD reduces the FPR95 by over 10% and improves the AUROC from 94.48% to 96.57% compared with SOTAs.*
 
-![The Attention Distribution](introduction.png)
+![The Attention Distribution](low_focus.png)
 
 ## DataSets
 
